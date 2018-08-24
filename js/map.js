@@ -1,4 +1,5 @@
 var mapLink = document.querySelector(".js-button-map");
+var mapLink2 = document.querySelector(".js-button-map2");
 var map = document.querySelector(".modal-map");
 var mapClose = map.querySelector(".modal-close");
 var mapOverlay = document.querySelector(".modal-overlay");
@@ -8,6 +9,13 @@ mapLink.addEventListener("click", function(evt) {
 	mapOverlay.classList.add("modal-overlay-show");
 	map.classList.add("modal-show");
 });
+
+mapLink2.addEventListener("click", function(evt) {
+	evt.preventDefault();
+	mapOverlay.classList.add("modal-overlay-show");
+	map.classList.add("modal-show");
+});
+
 
 mapClose.addEventListener ("click", function(evt) {
 	map.classList.remove("modal-show");
